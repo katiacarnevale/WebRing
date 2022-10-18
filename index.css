@@ -21,14 +21,14 @@
 }
 
 .container .section:nth-child(1) {
-    background: rgb(255, 16, 16) url(Rain1.jpg);
+    background: rgb(27, 29, 27) url(brick.png);
     background-size:cover;
     background-attachment: fixed;
     
 }
     .container .section h1 {
         color: rgb(255, 255, 255);
-        font-size: 50px;
+        font-size: 80px;
         margin: 0;
         padding:0;
         text-align: center;
@@ -40,7 +40,7 @@
 
 
 .container .section:nth-child(2) {
-    background: rgb(255, 122, 14) url(Rain1.jpg);
+    background: rgb(255, 133, 216) url(splitcolor.png);
     background-size:cover;
     background-attachment: fixed;
 }
@@ -49,84 +49,233 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    grid-template-areas:
+      "Text1 Text1 Text1 Text1"
+      "boyimg Text2 Text2 girlimg"
+      "boyimg Text3 Text3 girlimg"
+      "Text4 Text4 Text4 Text4";
   }
   
-  .Text1 { grid-area: 1 / 2 / 2 / 4; }
+  .Text2 { grid-area: Text2; }
   
-  .Text2 { grid-area: 2 / 2 / 3 / 4; }
+  .Text3 { grid-area: Text3; }
   
-  .Text3 { grid-area: 3 / 2 / 4 / 4; }
+  .girlimg { grid-area: girlimg; }
   
-  .Text4 { grid-area: 4 / 2 / 5 / 4; }
+  .Text1 { grid-area: Text1; }
   
-  .Animation1 { grid-area: 2 / 1 / 3 / 5; }
+  .Text4 { grid-area: Text4; }
   
-  .Animation2 { grid-area: 3 / 1 / 4 / 5; }
+  .boyimg { grid-area: boyimg; }
+  
+  
 
-  
-    .container .section:nth-child(2) p {
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        text-align: center;
-        }
-        .container .section:nth-child(2) p1 {
-            color: rgb(255, 255, 255);
-            font-size: 20px;
-            }
-            .container .section:nth-child(2) p2 {
-                color: rgb(255, 255, 255);
-                font-size: 20px;
-                }
-                .container .section:nth-child(2) p3 {
-                    color: rgb(255, 255, 255);
-                    font-size: 20px;
-                    }
-                    .container .section:nth-child(2) p4 {
-                        color: rgb(255, 255, 255);
-                        font-size: 20px;
-                        }
+  .p1 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .p2 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .p3 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .p4 {
+    color: white;
+    text-align: center;
+    font-size: 70px;
+  }
 
 
-
-                        
-
+    
 .container .section:nth-child(3) {
-    background: rgb(255, 236, 23) url(Rain1.jpg);
+    background: rgb(253, 255, 125) url(dividecopy.jpg);
     background-size:cover;
     background-attachment: fixed;
 }
-    .container .section:nth-child(3) p {
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%)translateY(-50%);
-        }
+
+        .Page3grid {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "Text1 Text1 Text1 Text1 Text1 Text1"
+              "Text2 Text2 Text2 Text2 Text2 Text2"
+              "boyimg boyimg Text3 Text4 girlimg girlimg"
+              "boyimg boyimg Text3 Text4 girlimg girlimg"
+              "Text5 Text5 Text5 Text5 Text5 Text5";
+          }
+          
+          .Text1 { grid-area: Text1; }
+          
+          .Text2 { grid-area: Text2; }
+          
+          .boyimg { grid-area: boyimg; }
+          
+          .Text3 { grid-area: Text3; }
+          
+          .Text4 { grid-area: Text4; }
+          
+          .girlimg { grid-area: girlimg; }
+          
+          .Text5 { grid-area: Text5; }
+
+          .p11 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+          }
+        
+          .p22 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+          }
+        
+          .p33 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+          }
+        
+          .p44 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+          }
+
+          .p55 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+          }
+          
 
         
 .container .section:nth-child(4) {
-    background: rgb(46, 255, 60) url(Rain1.jpg);
+    background: rgb(43, 55, 73) url(divide.jpg);
     background-size:cover;
     background-attachment: fixed;
 }
-    .container .section:nth-child(4) h1 {
-        color: rgb(255, 255, 255);
-        font-size: 20px;
-        }
+
+    .Page4grid {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Text1 Empty1"
+          "Text1 Empty1"
+          "Empty2 Text2"
+          "Empty2 Text2"
+          "Text3 Text3";
+      }
+      
+      .Text1 { grid-area: Text1; }
+      
+      .Empty1 { grid-area: Empty1; }
+      
+      .Empty2 { grid-area: Empty2; }
+      
+      .Text2 { grid-area: Text2; }
+      
+      .Text3 { grid-area: Text3; }
+      
+      .p111 {
+        color: white;
+        text-align: center;
+        font-size: 80px;
+      }
+    
+      .p222 {
+        color: white;
+        text-align: center;
+        font-size: 80px;
+      }
+    
+      .p333 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+      }
+     
 
 .container .section:nth-child(5) {
     background: rgb(62, 168, 255) url(Rain1.jpg);
       background-size:cover;
       background-attachment: fixed;
         }
+
+        .Page5grid {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              "Text1 Text1 Text1 Text1"
+              "Space1 Door Door Space2"
+              "Space1 Door Door Space2"
+              "Text2 Text2 Text2 Text2"
+              "Text3 Text3 Text3 Text3";
+          }
+          
+          .Text1 { grid-area: Text1; }
+          
+          .Space1 { grid-area: Space1; }
+          
+          .Door { grid-area: Door; }
+          
+          .Space2 { grid-area: Space2; }
+          
+          .Text2 { grid-area: Text2; }
+          
+          .Text3 { grid-area: Text3; }
+          
+
     .container .section:nth-child(5) p {
         color: rgb(255, 255, 255);
         font-size: 30px;
          }
+
+         .backDoor
+{
+  background-color: #333;
+  position:relative;
+  width:200px;
+  height:300px;
+  
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+.door
+{
+  background-color: brown;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:200px;
+  height:300px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen
+{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
 
  .container .section:nth-child(6) {
     background: rgb(175, 62, 255) url(Rain1.jpg);
